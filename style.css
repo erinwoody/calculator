@@ -1,0 +1,37 @@
+#background {
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.button  {
+    background-color: #64B255;
+    height: 5em;
+    width: 5em;
+    text-align: center;
+    color: white;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+}
+
+
+ .display {
+    display: flex; 
+    background-color: #82C276;
+    height: 5em;
+    width: 15em; 
+} 
+
+.function {
+    background-color: #82C276;
+    color: black;
+}
+
+#first-rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
