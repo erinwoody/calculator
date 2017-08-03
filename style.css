@@ -1,37 +1,43 @@
-#background {
+.container {
     display: flex;
-    justify-content: center; 
-    
+    justify-content: center;
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.button  {
-    background-color: #64B255;
-    height: 5em;
-    width: 5em;
-    text-align: center;
-    color: white;
-}
-
-.rows {
+.calc {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 50%;
 }
-
 
  .display {
-    display: flex; 
-    background-color: #82C276;
-    height: 5em;
-    width: 15em; 
+    display: flex;
+    flex-basis: 72.8%; 
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
 } 
 
-.function {
-    background-color: #82C276;
-    color: black;
+
+.button {
+    background-color: #61B34F;
+    color: white;
+    height: 5em;
+    width: 5em;
+    display: flex;
+    flex-basis: 24%;
+    justify-content: center;
+    align-items: center;
+    border: .5px solid white;
 }
 
-#first-rows {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.function {
+    background-color: #83C178;
+    color: black;
+    height: 5em;
+    width: 5em;
+
 }
