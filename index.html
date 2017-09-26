@@ -9,30 +9,41 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="calc">
-            <div class="button" id="delete"> C </div>
-            <div value="display" class="display">Display</div>
-            <div value="7" class="button">7</div>
-            <div value="8" class="button">8</div>
-            <div value="9" class="button">9</div>
-            <div value="/" class="button function">/</div>
-            <div value="4" class="button">4</div>
-            <div value="5" class="button">5</div>
-            <div value="6" class="button">6</div>
-            <div value="X" class="button function">X</div>
-            <div value="1" class="button">1</div>
-            <div value="2" class="button">2</div>
-            <div value="3" class="button">3</div>
-            <div value="-" class="button function">-</div>
-            <div value="0" class="button">0</div>
-            <div value="." class="button function">.</div>
-            <div value="=" class="button function">=</div>
-            <div value="+" class="button function">+</div>
-        </div>
+    <div>
+        <form name="calculator">
+            <input class="bgHover" type="button" value=" C " onClick="Clear()" />
+            <input class="display" name="display" type="text" />
+            <br>
+            <input type="button" value=" 7 " onClick="document.calculator.display.value +='7'" />
+            <input type="button" value=" 8 " onClick="document.calculator.display.value +='8'" />
+            <input type="button" value=" 9 " onClick="document.calculator.display.value +='9'" />
+            <input class="operand" type="button" value=" ( " onClick="OpenParen()" />
+            <input class="operand" type="button" value=" ) " onClick="CloseParen()" />
+            <br>
+            <input type="button" value=" 4 " onClick="document.calculator.display.value +='4'" />
+            <input type="button" value=" 5 " onClick="document.calculator.display.value +='5'" />
+            <input type="button" value=" 6 " onClick="document.calculator.display.value +='6'" />
+            <input class="operand" type="button" value=" % " onClick="Percent()" />
+            <input class="operand" type="button" value=" &radic; " onClick="document.calculator.display.value=Math.sqrt(document.calculator.display.value)"
+            />
+            <br>
+            <input type="button" value=" 1 " onClick="document.calculator.display.value +='1'" />
+            <input type="button" value=" 2 " onClick="document.calculator.display.value +='2'" />
+            <input type="button" value=" 3 " onClick="document.calculator.display.value +='3'" />
+            <input class="operand" type="button" value=" x " onClick="Multiply()" />
+            <input class="operand" type="button" value=" / " onClick="Divide()" />
+            <br>
+            <input type="button" value=" 0 " onClick="document.calculator.display.value +='0'" />
+            <input type="button" value=" . " onClick="document.calculator.display.value +='.'" />
+            <input class="bgHover" type="button" value=" = " onClick="document.calculator.display.value= eval(document.calculator.display.value)"
+            />
+            <input class="operand" type="button" value=" + " onClick="Add()" />
+            <input class="operand" type="button" value=" - " onClick="Subtract()" />
+        </form>
     </div>
+    <script src="main.js">
 
-    <script src="main.js"></script>
+    </script>
 </body>
 
 </html>
